@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タイピングゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game" class="text-container">
+        <label for="inputText">
+            <div class="question">
+                <span id="entered" class="marker"></span>
+                <span id="remained"></span>
+            </div>
+            <input type="text" class="text" id="inputText" autofocus>
+        </label>
+    </div>
+
+    <div id="message" class="text-container hidden">
+        <div class="message">
+            ゲームクリア！お疲れ様でした！<br>
+            <p>あなたの得点は<span id="score">0</span>点です。</p>
+            <button id="replayBtn" class="button">もう一度プレイする</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
